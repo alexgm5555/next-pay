@@ -1,47 +1,52 @@
 .ShoppingCar-container {
+  
   position: relative;
   right: 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  .div-car {
-    position: relative;
+  
+}
+.div-car {
+  position: relative;
+}
+.dot {
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  ._span {
+    margin: 5px;
+    font-size: small;
   }
-  .dot {
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;
-    right: 0px;
-    top: 0px;
-    position: absolute;
-    ._span {
-      margin: 5px;
-      font-size: small;
-    }
-  }
+}
 
-  .total-span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  .loading {
-    color: black;
-  }
-  @media (max-width: 700px) {
+.total-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.loading {
+  color: black;
+}
+@media (max-width: 700px) {
+  .ShoppingCar-container {
+    right: 20px;
     width: max-content;
     position: absolute;
     flex-direction: row-reverse;
-    .img-car {
-      width: 50px;
-      height: 50px;
-    }
   }
+  .img-car {
+    width: 50px;
+    height: 50px;
+  }
+}
 
-  @media (prefers-color-scheme: dark) {
-    .loading {
-      color: white;
-    }
+@media (prefers-color-scheme: dark) {
+  .loading {
+    color: white;
   }
 }
