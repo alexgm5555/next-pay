@@ -1,8 +1,7 @@
 
 import styles from './page.module.css'
 import Products from '../Products/page';
-import { ProductsInterface } from '@/app/lib/interfaces';
-import { findAllProducts } from '@/app/lib/data';
+import { findAllProducts } from '../../lib/data';
 
 const AllProducts:any = async () =>{
   const products = await findAllProducts();
