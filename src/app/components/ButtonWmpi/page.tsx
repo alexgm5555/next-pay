@@ -49,7 +49,7 @@ const ButtonWmpi:any = async () =>{
           <input type="hidden" name="amount-in-cents" value={data.total * 100} />
           <input type="hidden" name="reference" value={data.idTran} />
           <input type="hidden" name="signature:integrity" value={integrity}/>
-          <input type="hidden" name="redirect-url" value="http://localhost:3000/payment" />
+          <input type="hidden" name="redirect-url" value="https://prueba-tecnica-alexander-guiza.netlify.app/pages/payment" />
           <button type="submit">{formatMoney(data.total)} Pagar con Wompi</button>
         </form>
     </div>

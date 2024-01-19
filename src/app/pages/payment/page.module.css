@@ -1,0 +1,13 @@
+.Payment-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .red {
+    color: red;
+  }
+  .green {
+    color: rgb(143, 190, 72);
+  }
+}
