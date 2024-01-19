@@ -27,7 +27,7 @@ const ShoppingCar:any = () =>{
       </div>
       <div className={`${styles['total-span']}`}>
         {data.total !== 0 && 
-        <Suspense fallback={<>cargando...</>}>
+        <Suspense fallback={<div className={`${styles['loading']}`}>cargando...</div>}>
           <ButtonWmpi/>
         </Suspense>
         }
