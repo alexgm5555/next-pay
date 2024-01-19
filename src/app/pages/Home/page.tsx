@@ -1,10 +1,15 @@
 import { Suspense } from "react";
 import AllProducts from "../../components/AllProducts/page";
+import styles from "./page.module.css";
+import HomeLayout from '../../layouts/HomeLayout/page';
 
-export default function Home() {
+const Home = () =>{
   return (
-    <Suspense fallback={<>cargando</>}>
-      <AllProducts></AllProducts>
-    </Suspense>
+    <HomeLayout>
+      <Suspense fallback={<>cargando</>}>
+        <AllProducts></AllProducts>
+      </Suspense>
+    </HomeLayout>
   );
 }
+export default Home;
