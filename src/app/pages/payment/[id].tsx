@@ -1,16 +1,32 @@
-
-// import { useSearchParams } from 'next/navigation';
 import styles from './page.module.css';
 import { findIdTransaction } from '../../lib/data';
 import Link from 'next/link';
 import Products from '../../components/Products/page';
+import { ProductsInterface } from '@/app/lib/interfaces';
 
-export default async function Payment() {
-  // const serachParams = useSearchParams();
-  
-  let idParam = '166600-670000-676777';
+export async function getServerSideProps(context: any) {
+  let { id } = context.params;
+  // To mock api backend
+  id = '166600-670000-676777';
+  const transaction: {
+    id: string;
+    state: string;
+    idPayAway: string;
+    products: ProductsInterface[];
+} = await findIdTransaction(id);
+  return {
+    props: {
+      transaction
+    }
+  } 
+}
 
-  const transaction = await findIdTransaction(idParam);
+export default async function Payment({transaction}: {transaction: {
+  id: string;
+  state: string;
+  idPayAway: string;
+  products: ProductsInterface[];
+}}) {
   
   return (
   <div className={`${styles['Payment-container']}`}>
