@@ -56,7 +56,7 @@ const Products: any = ({products, title, action}: {
           />
           <p className={`${styles['pItem']}`}> {product.description}</p>
           <p className={`${styles['pItem']}`}> {formatMoney(+product.cost)}</p>
-          {product.quantity && <p> 
+          {product.quantity && <p className={`${styles['pItem']}`}>
             Quantity: {product.quantity}
           </p>}
         </div>
