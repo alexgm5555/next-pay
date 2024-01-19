@@ -10,6 +10,8 @@ const Products: any = ({products, title, action}: {
   title?: string,
   action: 'add' | 'remove'
 }) =>{
+  console.log('Products');
+  
   const dispatch =  useDispatch();
   const data = useSelector((state: any) => state.user.products);
 
@@ -52,8 +54,8 @@ const Products: any = ({products, title, action}: {
             src={product.thumbnail}
             alt="Add to car"
           />
-          <p> {product.description}</p>
-          <p> {formatMoney(+product.cost)}</p>
+          <p className={`${styles['pItem']}`}> {product.description}</p>
+          <p className={`${styles['pItem']}`}> {formatMoney(+product.cost)}</p>
           {product.quantity && <p> 
             Quantity: {product.quantity}
           </p>}
