@@ -10,20 +10,23 @@
     width: 150px;
     margin-top: 3rem;
     padding: 1rem;
-    background-color: #8c8c8c;
+    background-color: #b0f2ae;
     box-shadow: 0px 2px 4px -1px rgba(225, 225, 225, 0.2), 0px 4px 5px 0px rgba(225, 225, 225,0.14), 0px 1px 10px 0px rgba(225, 225, 225,0.12);
   }
   .item:hover {
-    box-shadow: 0px 2px 4px 1px #383b31, 0px 4px 5px 0px rgba(60, 68, 219, 0.2), 0px 1px 10px 0px rgba(60, 68, 219, 1.12);
+    box-shadow: 0px 2px 4px 1px #a1d3a1, 0px 4px 5px 0px rgba(60, 68, 219, 0.2), 0px 1px 10px 0px #72c571;
   }
   .pItem {
-    color: white;
+    color: black;
   }
   .img-car{
     width: 100px;
     height: 100px;
   }
   @media (prefers-color-scheme: dark) {
+    .pItem {
+      color: white;
+    }
     .item {
       background-color: rgb(39, 39, 39);
       box-shadow: 0px 2px 4px -1px rgba(225, 225, 225, 0.2), 0px 4px 5px 0px rgba(225, 225, 225,0.14), 0px 1px 10px 0px rgba(225, 225, 225,0.12);
