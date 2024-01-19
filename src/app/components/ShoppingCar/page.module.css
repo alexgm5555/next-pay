@@ -1,0 +1,40 @@
+.ShoppingCar-container {
+  position: relative;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .div-car {
+    position: relative;
+  }
+  .img-car {
+  }
+  .dot {
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    ._span {
+      margin: 5px;
+      font-size: small;
+    }
+  }
+
+  .total-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  @media (max-width: 700px) {
+    width: max-content;
+    position: absolute;
+    flex-direction: row-reverse;
+    .img-car {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
