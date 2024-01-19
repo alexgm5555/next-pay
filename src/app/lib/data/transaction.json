@@ -1,0 +1,44 @@
+[
+  { 
+    "id": "1",
+    "state": "error",
+    "idPayAway":"",
+    "products":[
+      {
+        "id": "2",
+        "name": "Product 2",
+        "description": "Description",
+        "cost": "70000",
+        "thumbnail": "http://http2.mlstatic.com/D_715617-MLU73290209099_122023-I.jpg"
+      }
+    ]
+  },
+  { 
+    "id": "2",
+    "idPayAway":"",
+    "state": "aprove",
+    "products":[
+      {
+        "id": "23",
+        "name": "Product 23",
+        "description": "Description",
+        "cost": "70000",
+        "thumbnail": "http://http2.mlstatic.com/D_641376-MLA72594168544_112023-I.jpg"
+      },
+      {
+        "id": "24",
+        "name": "Product 24",
+        "description": "Description",
+        "cost": "70000",
+        "thumbnail": "http://http2.mlstatic.com/D_841046-MLU71424471653_082023-I.jpg"
+      },
+      {
+        "id": "25",
+        "name": "Product 25",
+        "description": "Description",
+        "cost": "10000",
+        "thumbnail": "http://http2.mlstatic.com/D_955748-MLU71452584118_092023-I.jpg"
+      }
+    ]
+  }
+]

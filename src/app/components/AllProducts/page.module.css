@@ -1,0 +1,25 @@
+.Main-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  .children-container {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .panel-left {
+      color: white;
+      width: 63%;
+      min-height: 90vh;
+    }
+
+    .panel-right {
+      color: white;
+      flex-direction: column;
+      align-items: center;
+      width: 27%;
+      position: relative;
+    }
+  } 
+}
