@@ -42,12 +42,13 @@
 
 
 button {
+  background-color: #b0f2ae;
   cursor: pointer;
   box-shadow: 0px 2px 4px -1px rgba(225, 225, 225, 0.2), 0px 4px 5px 0px rgba(225, 225, 225,0.14), 0px 1px 10px 0px rgba(225, 225, 225,0.12);
   &:hover {
     box-shadow: 0px 2px 4px 1px #a1d3a1, 0px 4px 5px 0px rgba(60, 68, 219, 0.2), 0px 1px 10px 0px #72c571;
   }
-  color: #b0f2ae; /* Reemplaza el color con el código correspondiente a text-white */
+  color: black; /* Reemplaza el color con el código correspondiente a text-white */
   font-weight: bold; /* Reemplaza la propiedad con el código correspondiente a font-bold */
   padding-top: 0.5rem; /* Reemplaza el valor con el código correspondiente a py-2 */
   padding-bottom: 0.5rem; /* Reemplaza el valor con el código correspondiente a py-2 */
@@ -89,6 +90,7 @@ button {
   }
 
   button {
+    background-color: #454545;
     cursor: pointer;
     box-shadow: 0px 2px 4px -1px rgba(225, 225, 225, 0.2), 0px 4px 5px 0px rgba(225, 225, 225,0.14), 0px 1px 10px 0px rgba(225, 225, 225,0.12);
     &:hover {
