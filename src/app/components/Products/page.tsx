@@ -10,8 +10,6 @@ const Products: any = ({products, title, action}: {
   title?: string,
   action: 'add' | 'remove'
 }) =>{
-  console.log('Products');
-  
   const dispatch =  useDispatch();
   const data = useSelector((state: any) => state.user.products);
 

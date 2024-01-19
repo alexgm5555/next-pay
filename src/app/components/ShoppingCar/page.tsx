@@ -3,11 +3,10 @@ import { useSelector } from 'react-redux';
 import styles from './page.module.css'
 import Image from 'next/image';
 import { Suspense } from 'react';
-// import ButtonWompi from '../ButtonWompi/page';
+import ButtonWmpi from '../ButtonWmpi/page';
 
 const ShoppingCar:any = () =>{
   const data = useSelector((state: any) => state.user);
-console.log(data);
 
   return (
     <div 
@@ -27,11 +26,11 @@ console.log(data);
         />
       </div>
       <div className={`${styles['total-span']}`}>
-        {/* {data.total !== 0 && 
+        {data.total !== 0 && 
         <Suspense fallback={<>cargando...</>}>
-          <ButtonWompi/>
+          <ButtonWmpi/>
         </Suspense>
-        } */}
+        }
       </div>
     </div>
 )}
