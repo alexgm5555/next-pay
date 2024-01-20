@@ -9,7 +9,7 @@ export const getHashPayment= async ({
   amount,
   idTransaction
 }: HashPayment ) => {
-  const integrity = 'test_integrity_YhJHRplKgIjPb1Id8Tr8mMjozdKZt9SU';
+  const integrity = '';
   amount = amount * 100
   var cadenaConcatenada = `${idTransaction}${amount}COP${integrity}`;
   
