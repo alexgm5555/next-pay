@@ -10,7 +10,15 @@ const initialState: UserInterface = {
   email: "",
   products: [],
   total: 0,
-  idTran: ''
+  idTran: '',
+  fullName: '',
+  phone: '',
+  cardNumber: '',
+  expirationM: '',
+  expirationA: '',
+  cvc: '',
+  idNumber: '',
+  installments: '',
 }
 
 export const userSlice = createSlice({
@@ -30,6 +38,26 @@ export const userSlice = createSlice({
       state.total = total;
       state.idTran = uuid();
     },
+    dataToPay: (state, action) => {
+      const {
+        fullName,
+        phone,
+        cardNumber,
+        expirationM,
+        expirationA,
+        cvc,
+        idNumber,
+        installments,
+      } = action.payload;
+      state.fullName = fullName;
+      state.phone = phone;
+      state.cardNumber= cardNumber;
+      state.expirationA= expirationA;
+      state.expirationM= expirationM;
+      state.cvc= cvc;
+      state.idNumber= idNumber;
+      state.installments= installments;
+    }
   }
 });
 
@@ -37,5 +65,6 @@ export const {
   addProduct,
   removeProduct,
   sumTotal,
+  dataToPay
 } = userSlice.actions;
 export default userSlice.reducer;
