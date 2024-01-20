@@ -9,18 +9,17 @@
 }
 .overlay {
   position: relative;
-  background: rgba(190, 190, 190, 3);
+  background: #f8f8ff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  border-radius: 0.375rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .modal {
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .closeButton {
