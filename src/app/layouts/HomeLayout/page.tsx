@@ -1,8 +1,9 @@
-
+'use client'
 import { ReactNode } from 'react';
 import styles from './page.module.css'
 import SelectedProduct from '../../components/SelectedProduct/page';
 import ShoppingCar from '../../components/ShoppingCar/page';
+import Modal from '@/app/components/Modal/page';
 
 const HomeLayout: any = ({children}: { children: ReactNode }) =>{
   
@@ -17,6 +18,7 @@ const HomeLayout: any = ({children}: { children: ReactNode }) =>{
           <SelectedProduct/>
         </div>
     </div>
+    <Modal/>
   </div>
 )}
 
