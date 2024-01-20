@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 import styles from './page.module.css';
 import { useDispatch } from 'react-redux';
 import { dataToPay } from '../../../../provider/redux/userSlice';
-import { redirect } from 'next/navigation';
+
+import { useRouter } from 'next/navigation'
 
 const PaymentForm: any = ({ onClose }: { onClose: () => void }) => {
   const dispatch =  useDispatch();
+  const router = useRouter();
 
   const [showUserForm, setShowUserForm] = useState(true);
 
@@ -46,8 +48,8 @@ const PaymentForm: any = ({ onClose }: { onClose: () => void }) => {
           installments,
         }));
         setMessageError('');
-        redirect('/pages/payment?id=45345354');
-        // onClose();
+        router.push('/pages/payment?id=1236817263')
+        onClose();
       }
     }
   };
@@ -70,6 +72,7 @@ const PaymentForm: any = ({ onClose }: { onClose: () => void }) => {
     }
     return array;
   }
+
   const onHandleContinue = () => {
     let validate = '';
     if(!/^[0-9]{3}[0-9]{7}$/.test(phone.replaceAll(' ', ''))) validate = 'Phone'
@@ -110,7 +113,6 @@ const PaymentForm: any = ({ onClose }: { onClose: () => void }) => {
                 {bucle(0, 12).map((i)=>{
                   return <option key={`mes${i}`} value={`${i}`}>{i}</option>
                 })}
-                {/* Agrega más opciones según sea necesario */}
               </select>
               <select className={styles.select} value={expirationA} onChange={(e) => setExpirationA(e.target.value)}>
                 {bucle(1924, 2006).reverse().map((i)=>{
@@ -133,7 +135,6 @@ const PaymentForm: any = ({ onClose }: { onClose: () => void }) => {
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
-              {/* Agrega más opciones según sea necesario */}
             </select>
           </label>
           <button type="submit">Submit</button>
