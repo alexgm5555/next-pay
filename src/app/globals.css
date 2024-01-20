@@ -57,6 +57,11 @@ button {
   padding-right: 1rem; /* Reemplaza el valor con el código correspondiente a px-4 */
   border-radius: 0.375rem; 
 }
+input, select{
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
